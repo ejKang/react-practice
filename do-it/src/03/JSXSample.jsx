@@ -3,8 +3,11 @@ import BooleanComponent from './BooleanComponent';
 import ChildComponent from './ChildComponent';
 import ChildComponent2 from './ChildComponent2';
 import ChildProperty from './ChildProperty';
+import Counter from './Counter';
 import DefaultPropsComponent from './DefaultPropsComponent';
+import ForceUpdateExample from './ForceUpdateExample';
 import PropsComponent from './PropsComponent';
+import StateExample from './StateExample';
 import TodaysPlan from './TodaysPlan';
 
 class App extends React.Component {
@@ -58,6 +61,12 @@ class App extends React.Component {
             <span>자식 노드</span>
           </div>
         </ChildProperty>
+        <br />
+        <StateExample></StateExample>
+        <br />
+        <ForceUpdateExample></ForceUpdateExample>
+        <br />
+        <Counter></Counter>
       </div>
     );
   }
