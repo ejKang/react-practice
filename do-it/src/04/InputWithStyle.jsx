@@ -34,6 +34,7 @@ class InputWithStyle extends PureComponent {
     return (
       <div className="input-field">
         <input
+          className={`validate ${errorMessage && 'invalid'}`}
           id={`input_${name}`}
           ref={this.setRef}
           onChange={this.handleChange}
@@ -41,10 +42,14 @@ class InputWithStyle extends PureComponent {
           value={value}
           type={type}
         ></input>
-        <label htmlFor={`input_${name}`}>
+        <label htmlFor={`input_${name}`} className="active">
           {label}
 
-          {errorMessage && <span className="helper-text">{errorMessage}</span>}
+          {errorMessage && (
+            <span className="helper-text" data-error={errorMessage}>
+              {errorMessage}
+            </span>
+          )}
         </label>
       </div>
     );
