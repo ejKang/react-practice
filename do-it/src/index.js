@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from './03/JSXSample';
-import JSXSample2 from './03/JSXSample2';
-
+import JSXSample4 from './04/JSXSample4';
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <JSXSample2></JSXSample2>
+    <JSXSample4></JSXSample4>
   </React.StrictMode>,
   document.getElementById('root'),
 );

@@ -3,6 +3,7 @@ import Counter2 from '../03-8-9-10/Counter2';
 import Input from '../03-8-9-10/Input';
 import ListExample from '../03-8-9-10/ListExample';
 import ScrollSpy from '../03-8-9-10/ScrollSpy';
+import '../sass/materialize.scss';
 
 class JSXSample2 extends Component {
   constructor(props) {
@@ -35,6 +36,13 @@ class JSXSample2 extends Component {
           onChange={this.testOnChange}
           autoFocus={true}
         ></Input>
+        <br />
+        <nav>
+          <div className="nav-wrapper">
+            <div>두잇! 리액트 시작하기</div>
+          </div>
+        </nav>
+        <h1>머티리얼 CSS</h1>
       </div>
     );
   }
