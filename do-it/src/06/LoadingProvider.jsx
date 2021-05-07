@@ -25,7 +25,7 @@ class LoadingProvider extends React.Component {
   }
 }
 
-LoadingProvider.childContextTpes = {
+LoadingProvider.childContextTypes = {
   loading: PropTypes.bool,
   setLoading: PropTypes.func,
 };
